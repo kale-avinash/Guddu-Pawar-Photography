@@ -1684,7 +1684,7 @@ input:required {
 
 /*# sourceMappingURL=style.css.map */
 
-/*Testomonial*/
+/* /Testomonial/ */
 /* Section Background with Video */
 .testimonial-section {
   position: relative;
@@ -1814,4 +1814,3 @@ input:required {
 .carousel-control-next .custom-arrow::before {
   content: '\2192'; /* → */
 }
-
