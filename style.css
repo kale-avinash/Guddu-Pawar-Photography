@@ -1650,3 +1650,105 @@ input:required {
     border-radius: 10px; }
 
 /*# sourceMappingURL=style.css.map */
+
+/*Testomonial*/
+/* Section Background with Video */
+.testimonial-section {
+  position: relative;
+  overflow: hidden;
+  color: white; /* Ensure text is readable over video */
+  z-index: 1;
+}
+
+/* Background Video */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.9; /* Optional: adjust for better text contrast */
+}
+
+/* Testimonial Box Styling */
+.testimonial-box {
+  max-width: 700px;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  color: #000; /* Ensures readability */
+  opacity: 0.7;
+}
+
+.testimonial-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  
+}
+
+/* User Icon Styling */
+.user-icon i {
+  font-size: 80px;
+  color: #007bff;
+}
+
+/* Text Styling */
+.testimonial-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.client-name {
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.client-role {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Hide Bootstrap Default Arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none;
+}
+
+/* Custom Arrow Button Styling */
+.custom-arrow {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #007bff;
+  transition: none; /* Remove hover effects */
+}
+
+/* Arrow Icon Styling */
+.custom-arrow::before {
+  font-size: 24px;
+  color: #007bff;
+}
+
+/* Left Arrow */
+.carousel-control-prev .custom-arrow::before {
+  content: '\2190'; /* ← */
+}
+
+/* Right Arrow */
+.carousel-control-next .custom-arrow::before {
+  content: '\2192'; /* → */
+}
+
