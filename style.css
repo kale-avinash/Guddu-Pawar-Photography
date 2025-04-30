@@ -1648,3 +1648,85 @@ input:required {
     border-radius: 10px; }
 
 /*# sourceMappingURL=style.css.map */
+/*Testomonial*/
+
+
+/* Section Background */
+.testimonial-section {
+  background: #f8f9fa;
+}
+
+/* Testimonial Box Styling */
+.testimonial-box {
+  max-width: 700px;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.testimonial-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* User Icon Styling */
+.user-icon i {
+  font-size: 80px;
+  color: #007bff;
+}
+
+/* Text Styling */
+.testimonial-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.client-name {
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.client-role {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Carousel Arrows */
+/* Remove Bootstrap's default arrow icon */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  display: none; /* Hide default Bootstrap arrows */
+}
+
+/* Custom Arrow Button Styling */
+.custom-arrow {
+  background-color: #fff; /* White Background for the Arrow Button */
+  border-radius: 50%; /* Make it a round button */
+  width: 45px; /* Arrow Button Width */
+  height: 45px; /* Arrow Button Height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #007bff; /* Blue Border */
+}
+
+/* Adjust Arrow Icon Size and Color */
+.custom-arrow::before {
+  content: '\2190'; /* Left Arrow Symbol */
+  font-size: 24px; /* Arrow Icon Size */
+  color: #007bff; /* Blue Arrow Color */
+}
+
+/* Left Arrow */
+.carousel-control-prev .custom-arrow::before {
+  content: '\2190'; /* Left Arrow */
+}
+
+/* Right Arrow */
+.carousel-control-next .custom-arrow::before {
+  content: '\2192'; /* Right Arrow */
+}
