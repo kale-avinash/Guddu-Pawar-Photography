@@ -1740,6 +1740,7 @@ input:required {
 /* Testimonial Box Styling */
 .testimonial-box {
   max-width: 700px;
+  height: 300px;
   padding: 40px 30px;
   background: rgba(255, 255, 255, 0.9); /* Transparent white background */
   border-radius: 15px;
