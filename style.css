@@ -1801,8 +1801,30 @@ input:required {
   color:white; /* A blue color for the call icon */
 }
 /*end icon  */
+.btn.alime-btn.btn-2 {
+
+  display: inline-block; width: 100%; text-align: center;
+}
+
+@media (max-width: 768px) {
+  .owner-info{
+    margin-right: 50px;
+  } 
+
+}
+
+/* Responsive Adjustments for Mobile */
+@media (max-width: 768px) {
+  /* Make the Contact Us button smaller on mobile */
+  .btn.alime-btn.btn-2 {
+      width: 50%; /* Smaller width for mobile */
+      font-size: 14px; /* Smaller font size */
+      margin: 0 auto; /* Center the button */
+      margin-left: 80px;
 
 
+  }
+}
 /* Testimonial Box Styling */
 .testimonial-box {
   max-width: 700px;
