@@ -571,6 +571,24 @@ input:required {
       .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
         color: #fc6060; }
 
+        /* Logo style for desktop */
+.logo-img {
+  height: 200px;
+  width: auto;
+}
+
+/* Logo style for mobile screens */
+@media (max-width: 768px) {
+  .logo-img {
+      height: 170px;
+  }
+}
+.classy-navbar {
+  align-items: center;
+  padding: 10px 0;
+}
+
+
 .classynav ul li.active a {
   position: relative;
   z-index: 1; }
@@ -736,9 +754,22 @@ input:required {
         @media only screen and (max-width: 767px) {
           .footer-content .copywrite-text p a {
             font-size: 12px; } }
-  @media only screen and (max-width: 767px) {
-    .footer-content .footer-logo a img {
-      max-width: 50px; } }
+ /* Default (Laptop/Desktop View) */
+.footer-content .footer-logo a img {
+  width: 170px; /* किंवा हवे असेल तेवढा मोठा ठेवा */
+  height: auto;
+}
+
+/* Mobile View (767px आणि खाली) */
+@media only screen and (max-width: 767px) {
+  .footer-content .footer-logo a img {
+      width: 80px;
+      height: auto;
+  }
+}
+
+
+
   .footer-content .social-info a {
     color: #252525;
     font-size: 16px;
@@ -1450,6 +1481,8 @@ input:required {
       -o-transition-duration: 500ms;
       transition-duration: 500ms;
       width: 100%;
+      aspect-ratio: 1/1;
+      min-height: 160px;
       border-radius: 50%; }
   .team-content-area h5 {
     -webkit-transition-duration: 500ms;
@@ -1659,6 +1692,36 @@ input:required {
   color: white; /* Ensure text is readable over video */
   z-index: 1;
 }
+
+.contact-info-box .icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #dc3545; /* Bootstrap danger */
+  color: white;
+}
+.contact-info-box .icon:hover {
+  background-color: #bb2d3b;
+  transition: background-color 0.3s ease;
+}
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #dc3545; /* Bootstrap 'danger' red */
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
 
 /* Background Video */
 .background-video {
