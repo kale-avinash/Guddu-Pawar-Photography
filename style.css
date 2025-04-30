@@ -1680,12 +1680,13 @@ input:required {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
   color: #000; /* Ensures readability */
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 .testimonial-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  
 }
 
 /* User Icon Styling */
