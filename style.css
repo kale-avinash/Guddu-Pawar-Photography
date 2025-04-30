@@ -1649,21 +1649,38 @@ input:required {
 
 /*# sourceMappingURL=style.css.map */
 /*Testomonial*/
-
-
-/* Section Background */
+/* Section Background with Video */
 .testimonial-section {
-  background: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+  color: white; /* Ensure text is readable over video */
+  z-index: 1;
+}
+
+/* Background Video */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.9; /* Optional: adjust for better text contrast */
 }
 
 /* Testimonial Box Styling */
 .testimonial-box {
   max-width: 700px;
   padding: 40px 30px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9); /* Transparent white background */
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
+  color: #000; /* Ensures readability */
+  opacity: 0.9;
 }
 
 .testimonial-box:hover {
@@ -1696,37 +1713,37 @@ input:required {
   color: #777;
 }
 
-/* Carousel Arrows */
-/* Remove Bootstrap's default arrow icon */
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  display: none; /* Hide default Bootstrap arrows */
+/* Hide Bootstrap Default Arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none;
 }
 
 /* Custom Arrow Button Styling */
 .custom-arrow {
-  background-color: #fff; /* White Background for the Arrow Button */
-  border-radius: 50%; /* Make it a round button */
-  width: 45px; /* Arrow Button Width */
-  height: 45px; /* Arrow Button Height */
+  background-color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #007bff; /* Blue Border */
+  border: 2px solid #007bff;
+  transition: none; /* Remove hover effects */
 }
 
-/* Adjust Arrow Icon Size and Color */
+/* Arrow Icon Styling */
 .custom-arrow::before {
-  content: '\2190'; /* Left Arrow Symbol */
-  font-size: 24px; /* Arrow Icon Size */
-  color: #007bff; /* Blue Arrow Color */
+  font-size: 24px;
+  color: #007bff;
 }
 
 /* Left Arrow */
 .carousel-control-prev .custom-arrow::before {
-  content: '\2190'; /* Left Arrow */
+  content: '\2190'; /* ← */
 }
 
 /* Right Arrow */
 .carousel-control-next .custom-arrow::before {
-  content: '\2192'; /* Right Arrow */
+  content: '\2192'; /* → */
 }
