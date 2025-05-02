@@ -1473,17 +1473,22 @@ input:required {
   background-color: #ffffff; 
   height: 480px;
 }
-  .team-content-area .member-thumb {
-    margin: 0 auto 40px;
-    width: 165px; }
-    .team-content-area .member-thumb img {
-      -webkit-transition-duration: 500ms;
-      -o-transition-duration: 500ms;
-      transition-duration: 500ms;
-      width: 100%;
-      aspect-ratio: 1/1;
-      min-height: 160px;
-      border-radius: 50%; }
+.team-content-area .member-thumb {
+  margin: 0 auto 40px;
+  width: 165px;
+  height: 165px; /* fixed height to match the width for a perfect circle */
+  border-radius: 50%;
+  overflow: hidden; /* ensures the image doesn't spill out */
+}
+
+.team-content-area .member-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition-duration: 500ms;
+}
+
   .team-content-area h5 {
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
